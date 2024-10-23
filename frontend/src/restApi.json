@@ -1,0 +1,174 @@
+{
+    "data": [
+        {"ourQualities" : [
+            {
+                "id": 1,
+                "image": "./quality_food.svg",
+                "title": "QUALITY FOOD",
+                "description": " Indulge in the finest flavors, crafted with the utmost care." 
+            },
+            {
+                "id": 2,
+                "image": "./super_taste.svg",
+                "title": "SUPER TASTE",
+                "description": " Taste the extraordinary. Experience the exceptional." 
+            },
+            {
+                "id": 3,
+                "image": "./fast_delivery.svg",
+                "title": "FAST DELIVERY",
+                "description": "Don't wait for your food, let it wait for you. Order now for lightning-fast delivery." 
+            }
+        ],
+        "dishes": [
+            {
+                "id": 1,
+                "image": "./Khicuri (1).jpeg",
+                "title": "Khucuri with chicken",
+                "category": "Dinner"
+            },
+            {
+                "id": 2,
+                "image": "./Khicuri (2).jpeg",
+                "title": "Rice with chicken",
+                "category": "Dinner"
+            },
+            {
+                "id": 3,
+                "image": "./Khicuri (3).jpeg",
+                "title": "Mughlai porota",
+                "category": "Breakfast"
+            },
+            {
+                "id": 4,
+                "image": "./Khicuri (4).jpeg",
+                "title": "Full family dinner 1",
+                "category": "Dinner"
+            },
+            {
+                "id": 5,
+                "image": "./Khicuri (5).jpeg",
+                "title": "Full family dinner 2",
+                "category": "Lunch"
+            },
+            {
+                "id": 6,
+                "image": "./eggss.jpeg",
+                "title": "Eggs and fishes",
+                "category": "Dinner"
+            },
+            {
+                "id": 7,
+                "image": "./msalad.jpeg",
+                "title": "Mutton salad",
+                "category": "Dinner"
+            },
+            {
+                "id": 8,
+                "image": "./mutton.jpeg",
+                "title": "Mutton curry",
+                "category": "Dinner"
+            }
+        ],
+        "team": [
+            {
+                "id": 1,
+                "image": "./team_member_1.png",
+                "name": " JHON DOEE",
+                "designation": "Eggs and fishes"
+            },
+            {
+                "id": 2,
+                "image": "./team_member_2.png",
+                "name": "JHON DO",
+                "designation": "Meat and salad"
+            },
+            {
+                "id": 3,
+                "image": "./team_member_3.png",
+                "name": "JHON DOES",
+                "designation": "Rice and biriyani"
+            },
+            {
+                "id": 4,
+                "image": "./team_member_4.png",
+                "name": "JHON DOESNOT",
+                "designation": "Vegetables"
+            }
+        ],
+        "testimonials": [
+            {
+                "id": 1,
+                "image": "./review1.png",
+                "description": "Morbi nulla nec dui lacus, in. Libero in pretium metus massa. Sodales dignissim vitae mauris varius faucibus. Eleifend dui, non laoreet ac luctus facilisis diam. Enim scelerisque vel at id viverra tellus.",
+                "rating": 4,
+                "userName": "Jane Cooper"
+            },
+            {
+                "id": 2,
+                "image": "./review2.png",
+                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
+                "rating": 4.5,
+                "userName": "Esther Howard"
+            },
+            {
+                "id": 3,
+                "image": "./review3.png",
+                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
+                "rating": 5,
+                "userName": "Guy Hawkins"
+            }
+        ],
+        "who_we_are": [
+            {
+                "id": 1,
+                "number": "08",
+                "title": "Restaurants"
+            },
+            {
+                "id": 2,
+                "number": "20",
+                "title": "Chefs In Kitchen"
+            },
+            {
+                "id": 3,
+                "number": "05",
+                "title": "Years Of Experience"
+            },
+            {
+                "id": 4,
+                "number": "120",
+                "title": "Food Dishes"
+            }
+        ],
+        "navbarLinks": [
+            {
+                "id": 1,
+                "title": "HOME",
+                "link": "heroSection"
+            },
+            {
+                "id": 2,
+                "title": "ABOUT US",
+                "link": "about"
+            },
+            {
+                "id": 3,
+                "title": "SERVICES",
+                "link": "qualities"
+            },
+            {
+                "id": 4,
+                "title": "TEAM",
+                "link": "team"
+            },
+            {
+                "id": 5,
+                "title": "RESERVATION",
+                "link": "reservation"
+            }
+        ]
+    
+    } 
+    ]
+}
