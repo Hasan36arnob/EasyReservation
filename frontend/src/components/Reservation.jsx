@@ -18,9 +18,10 @@ const Reservation = () => {
     e.preventDefault();
     // console.log("Reservation clicked");
     console.log("reservation clicked"); // Debugging log
+
     try {
       // const { data } = await axios.post(
-      //   "http://localhost:4000/reservation/send",
+      //   `${process.env.REACT_APP_BACKEND_URL}/reservation/send`,
       //   { firstName, lastName, email, phone, date, time },
       //   {
       //     headers: {
@@ -29,18 +30,21 @@ const Reservation = () => {
       //     withCredentials: true,
       //   }
       // );
-      const { data } = await axios.post(
-        "process.env.BACKEND_URL",
 
+      const { data } = await axios.post(
+        "http://localhost:4000/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+          },
           withCredentials: true,
         }
       );
 
       console.log("Response received", data); // Debugging log
       toast.success(data.message);
+
       // Reset form fields after successful reservation
       setFirstName("");
       setLastName("");
@@ -48,12 +52,18 @@ const Reservation = () => {
       setEmail("");
       setTime("");
       setDate("");
+
       // Navigate to success page
-      // navigate("/success");
       navigate("/success");
     } catch (error) {
-      console.log("Error occurred", error.response); // Debugging log
-      toast.error(error.response.data.message);
+      console.log("Error occurred", error); // Debugging log
+
+      // Check if error.response exists
+      if (error.response && error.response.data) {
+        toast.error(error.response.data.message);
+      } else {
+        toast.error("An unexpected error occurred. Please try again.");
+      }
     }
   };
 
