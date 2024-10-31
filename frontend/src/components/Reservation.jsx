@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import axios from "axios";
 import toast from "react-hot-toast";
@@ -17,7 +17,7 @@ const Reservation = () => {
     // e.preventDefault(); // Prevents the form from refreshing the page
     e.preventDefault();
     // console.log("Reservation clicked");
-    console.log("reservation clicked") // Debugging log
+    console.log("reservation clicked"); // Debugging log
     try {
       // const { data } = await axios.post(
       //   "http://localhost:4000/reservation/send",
@@ -29,17 +29,15 @@ const Reservation = () => {
       //     withCredentials: true,
       //   }
       // );
-      const {data} = await axios.post(
-         "http://localhost:4000/reservation/send",
+      const { data } = await axios.post(
+        "process.env.BACKEND_URL",
 
-         {firstName , lastName, email, phone, date, time},
-         { 
-          headers : { "Content-Type": "application/json",
-          },
+        { firstName, lastName, email, phone, date, time },
+        {
+          headers: { "Content-Type": "application/json" },
           withCredentials: true,
-         }
+        }
       );
-
 
       console.log("Response received", data); // Debugging log
       toast.success(data.message);
@@ -52,8 +50,7 @@ const Reservation = () => {
       setDate("");
       // Navigate to success page
       // navigate("/success");
-       navigate("/success");
-
+      navigate("/success");
     } catch (error) {
       console.log("Error occurred", error.response); // Debugging log
       toast.error(error.response.data.message);
