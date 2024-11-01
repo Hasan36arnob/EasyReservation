@@ -14,12 +14,7 @@ const app = express();
 dbConnection();
 
 // Enable CORS for your frontend app (only localhost:5173 in this case)
-app.use(
-  cors({
-    origin: "http://localhost:5173", // Allow only the frontend origin
-    credentials: true, // Allow cookies and credentials
-  })
-);
+app.use(cors({ origin: 'https://adorable-pastelito-f9e5ea.netlify.app' }));
 
 // Body parser middleware
 app.use(express.json());

@@ -32,7 +32,7 @@ const Reservation = () => {
       // );
 
       const { data } = await axios.post(
-        "http://localhost:4000/reservation/send",
+        "https://easyreservation-2.onrender.com/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
