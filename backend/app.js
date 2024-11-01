@@ -15,7 +15,7 @@ dbConnection();
 
 // Enable CORS for your frontend app (only localhost:5173 in this case)
 // In your backend Express server
-const cors = require('cors');
+
 
 app.use(cors({
   origin: [
