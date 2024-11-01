@@ -14,7 +14,16 @@ const app = express();
 dbConnection();
 
 // Enable CORS for your frontend app (only localhost:5173 in this case)
-app.use(cors({ origin: 'https://adorable-pastelito-f9e5ea.netlify.app' }));
+// In your backend Express server
+const cors = require('cors');
+
+app.use(cors({
+  origin: [
+    'https://prismatic-praline-e2c22e.netlify.app', // Your new frontend domain
+    'https://adorable-pastelito-f9e5ea.netlify.app' // Keep the old domain if still needed
+  ],
+  credentials: true
+}));
 
 // Body parser middleware
 app.use(express.json());
